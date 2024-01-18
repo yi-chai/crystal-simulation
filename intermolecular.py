@@ -3,10 +3,12 @@ from scipy.spatial import cKDTree
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+
 def read_gro_file_with_masses(file_path):
     with open(file_path, 'r') as file:
         lines = file.readlines()[2:]
 
+    
     molecules = {}
     for line in lines:
         if not line.strip():
