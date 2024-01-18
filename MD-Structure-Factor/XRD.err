@@ -1,0 +1,17 @@
+Not a conda environment: /home/user/yichai/MD-Structure-Factor-master
+Traceback (most recent call last):
+  File "/home/user/yichai/MD-Structure-Factor-master/main_gromacs.py", line 211, in <module>
+    dens.compute_sf(T[args.first_frame:args.end_frame, ...], traj['dims'][args.first_frame:args.end_frame, ...],
+  File "/home/user/yichai/MD-Structure-Factor-master/dens.py", line 223, in compute_sf
+    bdict = get_borders(rad, dr, set(typ))	#dictionary of borders by atom type
+  File "/home/user/yichai/MD-Structure-Factor-master/dens.py", line 42, in get_borders
+    bdict[a] = ad[a][1]*np.sqrt(np.log(old_div(ad[a][0], PRECISION)))/dr
+KeyError: 'SI'
+Traceback (most recent call last):
+  File "/home/user/yichai/MD-Structure-Factor-master/main_gromacs.py", line 211, in <module>
+    dens.compute_sf(T[args.first_frame:args.end_frame, ...], traj['dims'][args.first_frame:args.end_frame, ...],
+  File "/home/user/yichai/MD-Structure-Factor-master/dens.py", line 223, in compute_sf
+    bdict = get_borders(rad, dr, set(typ))	#dictionary of borders by atom type
+  File "/home/user/yichai/MD-Structure-Factor-master/dens.py", line 42, in get_borders
+    bdict[a] = ad[a][1]*np.sqrt(np.log(old_div(ad[a][0], PRECISION)))/dr
+KeyError: 'SI1'

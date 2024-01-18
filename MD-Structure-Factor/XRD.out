@@ -1,0 +1,29 @@
+running on Linux 3.10.0-1160.102.1.el7.x86_64 #1 SMP Tue Oct 17 15:42:21 UTC 2023
+processing trajectory file em30.trr
+processing  em30.trr
+saving  out_em30_traj
+done saving
+done
+transforming coordinates to monoclinic cell (theta=120.000000 deg)
+==================================================
+==================================================
+Unit cell has dimensions of [100. 100. 100.]
+requested resolution: 1.0 Angstroms
+Using a spatial grid of: [100 100 100]
+actual resolution: [1. 1. 1.] Angstroms
+This corresponds to maximum q vector of [6.28318531 6.28318531 6.28318531] inverse Angstroms
+==================================================
+==================================================
+remapping coordinates into periodic cell
+running on Linux 3.10.0-1160.102.1.el7.x86_64 #1 SMP Tue Oct 17 15:42:21 UTC 2023
+transforming coordinates to monoclinic cell (theta=120.000000 deg)
+==================================================
+==================================================
+Unit cell has dimensions of [100. 100. 100.]
+requested resolution: 1.0 Angstroms
+Using a spatial grid of: [100 100 100]
+actual resolution: [1. 1. 1.] Angstroms
+This corresponds to maximum q vector of [6.28318531 6.28318531 6.28318531] inverse Angstroms
+==================================================
+==================================================
+remapping coordinates into periodic cell
