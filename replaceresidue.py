@@ -36,8 +36,11 @@ try:
     with open(file_pdb, 'r') as file:
         filedata = file.read()
 
-    print("Replacing " + originalresidue + " with " + newresidue + "...")
+    with open(file_pdb, 'r') as file:
+        lines = file.readlines()
+        originalresidue = lines[4][17:21]
 
+    print("Replacing " + originalresidue + " with " + newresidue + "...")
     filedata = filedata.replace(originalresidue, newresidue)
 
     print("Writing to PDB file...")
