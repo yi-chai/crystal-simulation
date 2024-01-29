@@ -1,0 +1,495 @@
+Startfile from command line: /home/user/yichai/TIPS0.05989356881873897energy.ts
+
+
+       ***********************************************************
+       *                    TeraChem v1.93P                      *
+       *                 Hg Version: 79b87f121f2d                *
+       *                   Production Version                    *
+       *                Compiled without textures                *
+       *           Chemistry at the Speed of Graphics!           *
+       ***********************************************************
+       * This program may only be used in connection with        *
+       * a valid license from PetaChem, LLC. Use of this program *
+       * or results thereof indicates acceptance of all terms    *
+       * and conditions stated in the license and that a valid   *
+       * license agreement between the user and PetaChem, LLC    *
+       * exists. PetaChem, LLC does not warrant the correctness  *
+       * of results or their suitability for any purpose.        *
+       * Please email bugs, suggestions, and comments to         *
+       *                  help@petachem.com                      *
+       *                                                         *
+       ***********************************************************
+
+
+       ***********************************************************
+       *  Compiled by toddmtz      Wed Aug 16 03:32:31 PDT 2017  *
+       *  Supported architectures: sm_20 sm_30 sm_50 sm_60       *
+       *  Cuda compilation tools, release 8.0, V8.0.44           *
+       ***********************************************************
+
+
+ Job started   Fri May  5 18:10:07 2023
+ On gpu02.dicc.um.edu.my (available memory: 113695 MB)
+
+######################################### RUNTIME INFO ##########################################
+terachem /home/user/yichai/TIPS0.05989356881873897energy.ts
+
+NVRM version: NVIDIA UNIX x86_64 Kernel Module  470.86  Tue Oct 26 21:55:45 UTC 2021
+GCC version:  gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC)
+
+	linux-vdso.so.1 =>  (0x00007ffd90b1f000)
+	libcurl.so.4 => /lib64/libcurl.so.4 (0x00007fccc52cf000)
+	libintbox.so.1 => /home/user/yichai/terachem-1.93p/lib/libintbox.so.1 (0x00007fcca56c1000)
+	libthcbox.so.1 => /home/user/yichai/terachem-1.93p/lib/libthcbox.so.1 (0x00007fcca3b57000)
+	libgridbox.so.1 => /home/user/yichai/terachem-1.93p/lib/libgridbox.so.1 (0x00007fcca3666000)
+	libdftbox.so.1 => /home/user/yichai/terachem-1.93p/lib/libdftbox.so.1 (0x00007fcca3355000)
+	libcublas.so.8.0 => /home/user/yichai/terachem-1.93p/lib/libcublas.so.8.0 (0x00007fcca09a5000)
+	libcufft.so.8.0 => /home/user/yichai/terachem-1.93p/lib/libcufft.so.8.0 (0x00007fcc97b57000)
+	libcuda.so.1 => /lib64/libcuda.so.1 (0x00007fcc96230000)
+	libcudart.so.8.0 => /home/user/yichai/terachem-1.93p/lib/libcudart.so.8.0 (0x00007fcc95fca000)
+	libcrypto.so.10 => /lib64/libcrypto.so.10 (0x00007fcc95b67000)
+	libssl.so.10 => /lib64/libssl.so.10 (0x00007fcc958f5000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007fcc955f3000)
+	libcilkrts.so.5 => /home/user/yichai/terachem-1.93p/lib/libcilkrts.so.5 (0x00007fcc953b2000)
+	libstdc++.so.6 => /app/miniconda/miniconda3/lib/libstdc++.so.6 (0x00007fccc55b7000)
+	libgcc_s.so.1 => /app/miniconda/miniconda3/lib/libgcc_s.so.1 (0x00007fccc55a3000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007fcc95196000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00007fcc94f92000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007fcc94bc4000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007fccc5539000)
+	libidn.so.11 => /lib64/libidn.so.11 (0x00007fcc94991000)
+	libssh2.so.1 => /lib64/libssh2.so.1 (0x00007fcc94764000)
+	libssl3.so => /lib64/libssl3.so (0x00007fcc944ff000)
+	libsmime3.so => /lib64/libsmime3.so (0x00007fcc942d7000)
+	libnss3.so => /lib64/libnss3.so (0x00007fcc93f9d000)
+	libnssutil3.so => /lib64/libnssutil3.so (0x00007fcc93d6d000)
+	libplds4.so => /lib64/libplds4.so (0x00007fcc93b69000)
+	libplc4.so => /lib64/libplc4.so (0x00007fcc93964000)
+	libnspr4.so => /lib64/libnspr4.so (0x00007fcc93725000)
+	libgssapi_krb5.so.2 => /lib64/libgssapi_krb5.so.2 (0x00007fcc934d8000)
+	libkrb5.so.3 => /lib64/libkrb5.so.3 (0x00007fcc931ef000)
+	libk5crypto.so.3 => /lib64/libk5crypto.so.3 (0x00007fcc92fbc000)
+	libcom_err.so.2 => /lib64/libcom_err.so.2 (0x00007fcc92db8000)
+	liblber-2.4.so.2 => /lib64/liblber-2.4.so.2 (0x00007fcc92ba9000)
+	libldap-2.4.so.2 => /lib64/libldap-2.4.so.2 (0x00007fcc92954000)
+	libz.so.1 => /app/miniconda/miniconda3/lib/libz.so.1 (0x00007fccc557d000)
+	librt.so.1 => /lib64/librt.so.1 (0x00007fcc9274c000)
+	libkrb5support.so.0 => /lib64/libkrb5support.so.0 (0x00007fcc9253c000)
+	libkeyutils.so.1 => /lib64/libkeyutils.so.1 (0x00007fcc92338000)
+	libresolv.so.2 => /lib64/libresolv.so.2 (0x00007fcc9211e000)
+	libsasl2.so.3 => /lib64/libsasl2.so.3 (0x00007fcc91f01000)
+	libselinux.so.1 => /lib64/libselinux.so.1 (0x00007fcc91cda000)
+	libcrypt.so.1 => /lib64/libcrypt.so.1 (0x00007fcc91aa3000)
+	libpcre.so.1 => /lib64/libpcre.so.1 (0x00007fcc91841000)
+	libfreebl3.so => /lib64/libfreebl3.so (0x00007fcc9163e000)
+#################################################################################################
+
+Cannot find license.dat file in the TeraChem installation directory /home/user/yichai/terachem-1.93p
+
+
+TRYING THE NETWORK LICENSE...
+Connecting to license server 'license.petachem.com' port '8877'...
+Connected!
+Checking your license...
+
+**************************************************************
+  Greetings, Woon Kai Lin! You have 2 licenses in total
+  IN USE: 0
+  AVAILABLE: 2
+
+  ATTENTION: A NEWER TERACHEM VERSION (v.1.95) IS AVAILABLE
+  TO UPGRADE, PLEASE RUN 'terachem -u' OR CONTACT PETACHEM
+**************************************************************
+
+Scratch directory: ./scr
+Random number seed: 232171710
+
+XYZ coordinates TIPS0.05989356881873897.xyz
+Molden File Output: ./scr/TIPS0.molden
+Using basis set: def2-svp
+Spin multiplicity: 1
+DIIS will use up to 10 vectors.
+WF convergence threshold: 3.00e-05
+Using DIIS algorithm to converge WF
+Maximum number of SCF iterations: 500
+Incremental fock with rebuild every 8 iterations
+Will switch to conventional Fock if diffuse functions are detected
+X-matrix tolerance: 1.00e-04
+PRECISION: DYNAMIC
+DFT Functional requested: wpbeh
+Method: wPBEh
+  wPBE exchange functional:   0.80
+  LR Hartree-Fock exchange:   0.80
+  Range correction scaling:   0.060 a.u.
+  Full range H-F exchange:    0.20
+  PBE correlation functional: 1.0
+Wavefunction: UNRESTRICTED
+DFT grid type: 1
+Using dynamic DFT grids.
+Initial guess generated by maximum overlap
+
+********************************************
+***** SINGLE POINT ENERGY CALCULATIONS *****
+********************************************
+COSMO model for polarizable continuum model enabled
+
+using 3 out of 3 CUDA devices
+   Device 0:      NVIDIA TITAN Xp, 12196MB, CC 6.1 -- CPU THREAD 0
+   Device 1:      NVIDIA TITAN Xp, 12196MB, CC 6.1 -- CPU THREAD 1
+   Device 2: NVIDIA GeForce GTX TITAN X, 12212MB, CC 5.2 -- CPU THREAD 2
+-------------------------------------------------------------------
+Compiled with MAGMA support.  MAGMA parameters:
+    Matrices larger than 5000 square will be treated with MAGMA
+       (Change by setting the MagmaMinN environment variable)
+    Magma will use 1 out of 3 GPUs
+       (Change by setting the MagmaNGPUs environment variable)
+-------------------------------------------------------------------
+ CPU Memory Available: 16080.75 MegaWords
+ GPU Memory Available: 1268.51 MegaWords
+ Maximum recommended basis set size: 13300 basis functions
+ (limited by GPU memory)
+-------------------------------------------------------------------
+Using d-functions. Configuring GPUs accordingly.
+0: CUBLAS initialized, available GPU memory: 9195MB
+1: CUBLAS initialized, available GPU memory: 9195MB
+2: CUBLAS initialized, available GPU memory: 9596MB
+
+
+Basis set:       def2-svp
+Total atoms:     100
+Total charge:    0
+Total electrons: 346 (173-alpha, 173-beta)
+Number electrons modeled by ECPs: 0
+Total orbitals:  968
+Total AO shells: 442 (248 S-shells; 148 P-shells; 46 D-shells; 0 F-shells; 0 G-shells)
+Spin multiplicity: 1
+Nuclear repulsion energy (QM atoms): 5792.132469972703 a.u.
+
+Setting up the DFT grid...
+time to set the grid = 0.08 s
+DFT grid points: 95279 (952 points/atom)
+Setting up the DFT grid...
+time to set the grid = 0.20 s
+DFT grid points: 264753 (2647 points/atom)
+=COSMO= Number of H atoms in QM atoms:54
+=COSMO= Number of Heavy atoms in QM atoms:46
+=COSMO= size of A matrix:225993800 bytes
+=COSMO= ++++++++++++++++++++++++++++++ COSMO parameters ++++++++++++++++++++++++++++++
+=COSMO= I. Cavity Information:
+=COSMO= SAS(Solvent accesible surface) initialization finished
+=COSMO= Time for initializing Molecular Surface:0.08490300 (sec)
+=COSMO= Time for initializing cosmo calculation:0.65141498 (sec)
+=COSMO= Cavity effective radius(Angstrom) (r_solv+r_vdw-dsc) was written into ./scr/ratom.txt
+=COSMO= Solvent Dielectric Constant:3.600000
+=COSMO= Cosmo Solvent radius:0.000000
+=COSMO= Cosmo charge scaling method:0
+=COSMO= Cavity built with Lebedev Grid
+=COSMO= Grid points/QM Hydrogen: 110
+=COSMO= Grid points/QM Heavy atom: 110
+=COSMO= Herbert Switching-Gaussian method turned on
+=COSMO= After removing points inside of SAS:
+=COSMO= Total number of segments on molecular surface:5315
+=COSMO= Number of segments belonging to QM atoms:5315
+=COSMO= Total surface area of cavity: 760.0021(Angstrom^2)
+=COSMO= Total volume of cavity: 444.2700 (Angstrom^3)
+=COSMO= II. COSMO integral options:
+=COSMO= Building COMSO c vector with original algorithm
+=COSMO= COSMO one-electron integral threshold: 1e-12
+=COSMO= III. Linear solver options:
+=COSMO= Initialize COSMO for A matrix in full storage form
+=COSMO= CG precondtioner:Jacobi
+=COSMO= Tight CG convergence threshold:1e-06
+=COSMO= CG dynamic threshold: on
+=COSMO= Adjust CG convergence threshold dynamically
+=COSMO= IV. PCM field read/write options:
+=COSMO= PCM field is not written to files
+=COSMO= No PCM field file is read in
+=COSMO= ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+                      *** Start SCF Iterations ***
+
+ Iter     DIIS Error       Energy change      Electrons        XC Energy           Energy              E_PCM      Time(s)
+-------------------------------------------------------------------------------------------------------------------------
+         >>> Purifying Palpha... IDMP = 1.88e-14 <<<
+         >>> Purifying Pbeta ... IDMP = 1.88e-14 <<<
+THRESPDP set to 1.00e+00
+                >>> SWITCHING TO GRID 1 <<<
+Rotate HOMO and LUMO by 45.000000 degrees
+   1     0.4256366014   -2271.5132663001   346.0078517398  -221.9314079207   -2271.5132663001     -0.0978366657    3.78
+THRESPDP set to 3.02e-02
+                >>> SWITCHING TO GRID 0 <<<
+   2     0.4916724976      -5.7564923228   345.9833368743  -237.3008238917   -2277.2697586229     -0.5548036690    3.33
+   3     0.3435060615      -5.0035111897   345.9775818098  -231.1219801438   -2282.2732698125     -0.2816736562    3.24
+   4     0.1555377548      -1.5896878718   345.9769387779  -230.7155025133   -2283.8629576843     -0.1062888837    3.21
+   5     0.0366330313      -0.6658472656   345.9774105734  -231.0492718857   -2284.5288049499     -0.0150545031    3.11
+   6     0.0285328139      -0.0389779392   345.9774225562  -231.0740755781   -2284.5677828891     -0.0138634165    3.06
+   7     0.0063539264      -0.0283987420   345.9775370371  -231.0320642947   -2284.5961816311     -0.0116215252    2.99
+                >>> SWITCHING TO GRID 1 <<<
+   8     0.0019331418      -0.0010061022   346.0025844242  -231.0294116658   -2284.5971877333     -0.0108525662    3.49
+THRESPDP set to 5.94e-04
+   9     0.0012280324      -0.0002831935   346.0025881896  -231.0325775010   -2284.5974709268     -0.0108113454    4.96
+  10     0.0002998090      -0.0000398027   346.0025942072  -231.0331490170   -2284.5975107294     -0.0108848154    3.97
+  11     0.0001419627      -0.0000060761   346.0025965518  -231.0332024184   -2284.5975168056     -0.0109117464    3.96
+  12     0.0000377104      -0.0000010394   346.0025964704  -231.0333649306   -2284.5975178450     -0.0108966788    3.82
+  13     0.0000282704      -0.0000003885   346.0025962867  -231.0333256377   -2284.5975182334     -0.0108997363    3.51
+-------------------------------------------------------------------------------------------------------------------------
+FINAL ENERGY: -2284.5975182334 a.u.
+C-PCM contribution to final energy:-0.0108997363 a.u. ( already included in final energy )
+CENTER OF MASS: {-0.002158, 0.000830, 0.001904} ANGS
+DIPOLE MOMENT: {0.028379, 0.168937, -0.123043} (|D| = 0.210914) DEBYE
+SPIN SZ:         0.000000
+SPIN S-SQUARED: 0.001353 (exact: 0.00)
+
+Running Resp charge analysis...
+Total number of ESP grid points from 4 layers: 3369
+Electron static potential written to file ./scr/esp.xyz (unit: Ansgtrom)
+ESP unrestraint charges:
+Atom          X          Y          Z     Charge   Exposure
+-----------------------------------------------------------
+   H  -8.861033  -3.104699  -4.091615   0.082281     0.1702
+   C -10.791143  -3.752421  -3.653363  -0.391194     0.0922
+   H -11.571488  -4.646139  -5.373084   0.084802     0.2926
+   H -10.629077  -5.251318  -2.210112   0.091903     0.1489
+   C -12.487868  -1.581973  -2.768101   0.286511     0.0000
+   H -12.531063  -0.162101  -4.306616  -0.035060     0.1596
+   C -15.206265  -2.486052  -2.330893  -0.403123     0.0751
+   H -15.987816  -3.350087  -4.064658   0.094903     0.2979
+   H -16.492281  -0.942573  -1.776511   0.066253     0.1543
+   H -15.301891  -3.937935  -0.835358   0.084696     0.1755
+  Si -11.190887   0.264656   0.065718   0.536857     0.0000
+   C -12.250091  -1.133960   3.218385   0.288769     0.0000
+   H -14.342436  -1.170662   3.139420  -0.054399     0.1436
+   C -11.315554  -3.852824   3.559146  -0.396949     0.0785
+   H -11.982999  -5.121674   2.046256   0.081509     0.1223
+   H -11.976348  -4.649376   5.373748   0.087745     0.3032
+   H  -9.230245  -3.936504   3.569664   0.091161     0.1489
+   C -11.463702   0.527070   5.454487  -0.343467     0.0853
+   H  -9.388958   0.730618   5.558123   0.071868     0.2447
+   H -12.093287  -0.309032   7.262431   0.080312     0.2979
+   H -12.275679   2.443359   5.344204   0.056662     0.1968
+   C -12.074546   3.758364  -0.159255   0.264759     0.0000
+   H -11.199666   4.612095   1.540302  -0.016158     0.1596
+   C -10.913710   5.041479  -2.478303  -0.450109     0.0785
+   H -11.678471   4.259687  -4.256243   0.096938     0.2287
+   H  -8.843033   4.813751  -2.544234   0.104155     0.1330
+   H -11.330122   7.088772  -2.488634   0.104394     0.2819
+   C -14.929233   4.217609  -0.018098  -0.379065     0.0922
+   H -15.912369   3.449761  -1.691200   0.081335     0.2021
+   H -15.353337   6.261987   0.041663   0.088280     0.3032
+   H -15.800666   3.355945   1.669649   0.065668     0.1915
+   C  -7.697841   0.127799   0.003448  -0.692045     0.0273
+   C  -5.378983   0.048703  -0.012682   0.330054     0.1024
+   C  -2.697834  -0.017854  -0.041535  -0.234447     0.1092
+   C  -1.413327  -2.381698  -0.077547   0.161331     0.1092
+   C   1.323340  -2.438346  -0.118690   0.119979     0.1092
+   C   2.555322  -4.803588  -0.140359  -0.403440     0.1468
+   H   4.621881  -4.838586  -0.155847   0.202593     0.0426
+   C   1.224907  -7.072594  -0.133990   0.230959     0.1092
+   C  -1.510710  -7.016184  -0.103400   0.215910     0.1092
+   C  -2.745443  -4.693199  -0.074839  -0.401537     0.1365
+   H  -4.812597  -4.641176  -0.048195   0.199230     0.0372
+   C  -2.857098  -9.367998  -0.101632  -0.274976     0.1775
+   H  -4.925951  -9.319071  -0.079020   0.159276     0.2553
+   C  -1.588306 -11.621248  -0.127903  -0.089364     0.1706
+   H  -2.637956 -13.404032  -0.127837   0.126447     0.3511
+   C   1.115575 -11.676564  -0.155602  -0.109370     0.1706
+   H   2.091375 -13.500701  -0.175339   0.131699     0.3457
+   C   2.475050  -9.476895  -0.157477  -0.267943     0.1706
+   H   4.544245  -9.511127  -0.178302   0.156272     0.2394
+   C   2.710975  -0.133133  -0.136533  -0.158525     0.1092
+   C   1.425521   2.231203  -0.085743   0.107639     0.1092
+   C  -1.310393   2.287997  -0.035965   0.173405     0.1092
+   C  -2.542547   4.652950   0.014412  -0.428691     0.1433
+   H  -4.608857   4.686982   0.059604   0.197617     0.0479
+   C  -1.213380   6.922439   0.015283   0.265033     0.1092
+   C   1.521379   6.866184  -0.031374   0.190845     0.1092
+   C   2.755787   4.543471  -0.080350  -0.382646     0.1263
+   H   4.822128   4.494090  -0.112301   0.206948     0.0319
+   C   2.868565   9.217291  -0.024425  -0.256348     0.1672
+   H   4.937309   9.167393  -0.057438   0.152035     0.2447
+   C   1.600190  11.470465   0.020829  -0.110995     0.1775
+   H   2.650027  13.253052   0.024498   0.131244     0.3457
+   C  -1.103475  11.525844   0.063158  -0.080163     0.1775
+   H  -2.079034  13.349869   0.096300   0.124783     0.3457
+   C  -2.463115   9.326312   0.061764  -0.300655     0.1775
+   H  -4.532139   9.360599   0.094073   0.165456     0.2500
+   C   5.392439  -0.182204  -0.210919   0.247045     0.1024
+   C   7.711905  -0.196056  -0.289046  -0.580358     0.0546
+  Si  11.205036  -0.084616  -0.296562   0.338350     0.0000
+   C  12.469915  -3.360060  -1.213049   0.303523     0.0068
+   H  12.551442  -3.285486  -3.304509  -0.047645     0.2500
+   C  10.714912  -5.550487  -0.505473  -0.273584     0.0580
+   H  11.509601  -7.371073  -1.153091   0.059169     0.3085
+   H   8.832789  -5.340413  -1.372209   0.053461     0.1223
+   H  10.437609  -5.699163   1.556771   0.060395     0.1702
+   C  15.163436  -3.834187  -0.253772  -0.433195     0.0819
+   H  16.501932  -2.346285  -0.834877   0.089528     0.1649
+   H  15.900500  -5.645454  -0.987019   0.097762     0.3085
+   H  15.230209  -3.947419   1.827952   0.093082     0.1649
+   C  12.245733   0.870495   3.027991   0.339626     0.0000
+   H  14.338989   0.803817   2.982355  -0.063877     0.1596
+   C  11.325023  -1.009065   5.028569  -0.313049     0.0785
+   H  12.002034  -2.949018   4.682386   0.060595     0.1064
+   H   9.240732  -1.078928   5.093880   0.068266     0.2181
+   H  11.987738  -0.452762   6.930163   0.065079     0.2766
+   C  11.454190   3.567640   3.718395  -0.391398     0.0819
+   H  12.280705   4.990479   2.441239   0.081752     0.1489
+   H  12.067820   4.045960   5.657319   0.084481     0.2926
+   H   9.380120   3.794050   3.656811   0.084425     0.1596
+   C  12.229418   2.288083  -2.833709   0.289096     0.0000
+   H  12.055308   1.180351  -4.603287  -0.023581     0.2128
+   C  10.500647   4.593380  -3.106373  -0.337412     0.0819
+   H  11.101488   5.773442  -4.721953   0.072461     0.3085
+   H  10.542981   5.813101  -1.414536   0.083827     0.1277
+   H   8.518823   4.039919  -3.430209   0.068406     0.1596
+   C  15.004969   3.071113  -2.563268  -0.452476     0.0887
+   H  15.589735   4.298186  -4.149103   0.107027     0.3298
+   H  16.300714   1.438780  -2.541834   0.088282     0.1649
+   H  15.333377   4.149380  -0.807251   0.101085     0.1702
+-----------------------------------------------------------
+Quality of fit (RRMS): 0.154
+
+Solving Resp charge with restraints iteratively...
+Restraint parameters a:0.0005 , b:  0.1
+ESP restraint charges:
+Atom          X          Y          Z     Charge   Exposure
+-----------------------------------------------------------
+   H  -8.861033  -3.104699  -4.091615   0.038659     0.1702
+   C -10.791143  -3.752421  -3.653363  -0.225440     0.0922
+   H -11.571488  -4.646139  -5.373084   0.048843     0.2926
+   H -10.629077  -5.251318  -2.210112   0.065522     0.1489
+   C -12.487868  -1.581973  -2.768101   0.119276     0.0000
+   H -12.531063  -0.162101  -4.306616   0.020542     0.1596
+   C -15.206265  -2.486052  -2.330893  -0.197228     0.0751
+   H -15.987816  -3.350087  -4.064658   0.048399     0.2979
+   H -16.492281  -0.942573  -1.776511   0.033115     0.1543
+   H -15.301891  -3.937935  -0.835358   0.041362     0.1755
+  Si -11.190887   0.264656   0.065718   0.245591     0.0000
+   C -12.250091  -1.133960   3.218385   0.122240     0.0000
+   H -14.342436  -1.170662   3.139420   0.000595     0.1436
+   C -11.315554  -3.852824   3.559146  -0.211996     0.0785
+   H -11.982999  -5.121674   2.046256   0.055017     0.1223
+   H -11.976348  -4.649376   5.373748   0.046885     0.3032
+   H  -9.230245  -3.936504   3.569664   0.047395     0.1489
+   C -11.463702   0.527070   5.454487  -0.173960     0.0853
+   H  -9.388958   0.730618   5.558123   0.032561     0.2447
+   H -12.093287  -0.309032   7.262431   0.044984     0.2979
+   H -12.275679   2.443359   5.344204   0.027920     0.1968
+   C -12.074546   3.758364  -0.159255   0.144242     0.0000
+   H -11.199666   4.612095   1.540302   0.009722     0.1596
+   C -10.913710   5.041479  -2.478303  -0.210813     0.0785
+   H -11.678471   4.259687  -4.256243   0.041517     0.2287
+   H  -8.843033   4.813751  -2.544234   0.041796     0.1330
+   H -11.330122   7.088772  -2.488634   0.051404     0.2819
+   C -14.929233   4.217609  -0.018098  -0.198924     0.0922
+   H -15.912369   3.449761  -1.691200   0.046402     0.2021
+   H -15.353337   6.261987   0.041663   0.039736     0.3032
+   H -15.800666   3.355945   1.669649   0.042492     0.1915
+   C  -7.697841   0.127799   0.003448  -0.300315     0.0273
+   C  -5.378983   0.048703  -0.012682   0.005480     0.1024
+   C  -2.697834  -0.017854  -0.041535   0.016291     0.1092
+   C  -1.413327  -2.381698  -0.077547   0.041485     0.1092
+   C   1.323340  -2.438346  -0.118690   0.025086     0.1092
+   C   2.555322  -4.803588  -0.140359  -0.241394     0.1468
+   H   4.621881  -4.838586  -0.155847   0.135639     0.0426
+   C   1.224907  -7.072594  -0.133990   0.155097     0.1092
+   C  -1.510710  -7.016184  -0.103400   0.151134     0.1092
+   C  -2.745443  -4.693199  -0.074839  -0.262715     0.1365
+   H  -4.812597  -4.641176  -0.048195   0.158191     0.0372
+   C  -2.857098  -9.367998  -0.101632  -0.241647     0.1775
+   H  -4.925951  -9.319071  -0.079020   0.145974     0.2553
+   C  -1.588306 -11.621248  -0.127903  -0.084284     0.1706
+   H  -2.637956 -13.404032  -0.127837   0.122505     0.3511
+   C   1.115575 -11.676564  -0.155602  -0.118569     0.1706
+   H   2.091375 -13.500701  -0.175339   0.129857     0.3457
+   C   2.475050  -9.476895  -0.157477  -0.214386     0.1706
+   H   4.544245  -9.511127  -0.178302   0.137358     0.2394
+   C   2.710975  -0.133133  -0.136533   0.019986     0.1092
+   C   1.425521   2.231203  -0.085743   0.034060     0.1092
+   C  -1.310393   2.287997  -0.035965   0.032999     0.1092
+   C  -2.542547   4.652950   0.014412  -0.256996     0.1433
+   H  -4.608857   4.686982   0.059604   0.138645     0.0479
+   C  -1.213380   6.922439   0.015283   0.179235     0.1092
+   C   1.521379   6.866184  -0.031374   0.142045     0.1092
+   C   2.755787   4.543471  -0.080350  -0.264006     0.1263
+   H   4.822128   4.494090  -0.112301   0.172894     0.0319
+   C   2.868565   9.217291  -0.024425  -0.230146     0.1672
+   H   4.937309   9.167393  -0.057438   0.138962     0.2447
+   C   1.600190  11.470465   0.020829  -0.098116     0.1775
+   H   2.650027  13.253052   0.024498   0.125494     0.3457
+   C  -1.103475  11.525844   0.063158  -0.092973     0.1775
+   H  -2.079034  13.349869   0.096300   0.123592     0.3457
+   C  -2.463115   9.326312   0.061764  -0.250980     0.1775
+   H  -4.532139   9.360599   0.094073   0.151215     0.2500
+   C   5.392439  -0.182204  -0.210919  -0.000036     0.1024
+   C   7.711905  -0.196056  -0.289046  -0.295053     0.0546
+  Si  11.205036  -0.084616  -0.296562   0.206662     0.0000
+   C  12.469915  -3.360060  -1.213049   0.097592     0.0068
+   H  12.551442  -3.285486  -3.304509   0.002303     0.2500
+   C  10.714912  -5.550487  -0.505473  -0.098502     0.0580
+   H  11.509601  -7.371073  -1.153091   0.024456     0.3085
+   H   8.832789  -5.340413  -1.372209   0.021139     0.1223
+   H  10.437609  -5.699163   1.556771   0.026945     0.1702
+   C  15.163436  -3.834187  -0.253772  -0.229438     0.0819
+   H  16.501932  -2.346285  -0.834877   0.054928     0.1649
+   H  15.900500  -5.645454  -0.987019   0.054827     0.3085
+   H  15.230209  -3.947419   1.827952   0.049121     0.1649
+   C  12.245733   0.870495   3.027991   0.150150     0.0000
+   H  14.338989   0.803817   2.982355  -0.013769     0.1596
+   C  11.325023  -1.009065   5.028569  -0.148685     0.0785
+   H  12.002034  -2.949018   4.682386   0.037073     0.1064
+   H   9.240732  -1.078928   5.093880   0.029005     0.2181
+   H  11.987738  -0.452762   6.930163   0.031168     0.2766
+   C  11.454190   3.567640   3.718395  -0.190578     0.0819
+   H  12.280705   4.990479   2.441239   0.048920     0.1489
+   H  12.067820   4.045960   5.657319   0.039426     0.2926
+   H   9.380120   3.794050   3.656811   0.036423     0.1596
+   C  12.229418   2.288083  -2.833709   0.131719     0.0000
+   H  12.055308   1.180351  -4.603287   0.008639     0.2128
+   C  10.500647   4.593380  -3.106373  -0.167959     0.0819
+   H  11.101488   5.773442  -4.721953   0.038226     0.3085
+   H  10.542981   5.813101  -1.414536   0.049644     0.1277
+   H   8.518823   4.039919  -3.430209   0.020307     0.1596
+   C  15.004969   3.071113  -2.563268  -0.250958     0.0887
+   H  15.589735   4.298186  -4.149103   0.059377     0.3298
+   H  16.300714   1.438780  -2.541834   0.055425     0.1649
+   H  15.333377   4.149380  -0.807251   0.056943     0.1702
+-----------------------------------------------------------
+Quality of fit (RRMS): 0.139
+
+Writing out molden info
+
+Running Mulliken population analysis...
+
+Total processing time: 49.54 sec
+
+ Job finished: Fri May  5 18:11:07 2023
+
+SLURM_NODELIST=gpu02 MANPATH=/app/miniconda/miniconda3/share/man:/opt/apps/lmod/8.7.2/share/man::/opt/puppetlabs/puppet/share/man SLURM_JOB_NAME=automation XDG_SESSION_ID=24920 HOSTNAME=gpu02.dicc.um.edu.my SLURM_THREADS_PER_CORE=1 SLURM_TOPOLOGY_ADDR=gpu02 SLURMD_NODENAME=gpu02 SELINUX_ROLE_REQUESTED= SLURM_PRIO_PROCESS=0 TeraChem=/home/user/yichai/terachem-1.93p SLURM_NODE_ALIASES=(null) SHELL=/bin/bash SLURM_GPUS_ON_NODE=3 __LMOD_REF_COUNT_MODULEPATH=/modulefiles:1 LMOD_ROOT=/opt/apps/lmod SLURM_HINT=nomultithread HISTSIZE=1000 SLURM_JOB_QOS=long MODULEPATH_ROOT=/opt/apps/modulefiles SSH_CLIENT=192.168.96.14 53047 22 SLURM_TOPOLOGY_ADDR_PATTERN=node TMPDIR=/tmp LMOD_PACKAGE_PATH=/opt/apps/lmod/ CONDA_SHLVL=1 SELINUX_USE_CURRENT_RANGE= CONDA_PROMPT_MODIFIER=(/home/user/yichai/python_lib)  LMOD_PKG=/opt/apps/lmod/8.7.2 QTDIR=/usr/lib64/qt-3.3 LMOD_VERSION=8.7.2 SLURM_JOB_GPUS=0,1,2 QTINC=/usr/lib64/qt-3.3/include LOCAL_TMP=/tmp/job_yichai/62988 QT_GRAPHICSSYSTEM_CHECKED=1 USER=yichai SLURM_NNODES=1 ROCR_VISIBLE_DEVICES=0,1,2 LMOD_sys=Linux LD_LIBRARY_PATH=/home/user/yichai/terachem-1.93p/lib:/app/miniconda/miniconda3/lib:/app/miniconda/miniconda3/lib64 SBATCH_HINT=nomultithread CONDA_EXE=/app/miniconda/miniconda3/bin/conda SLURM_JOBID=62988 SLURM_NTASKS=16 _CE_CONDA= NBOEXE=/home/user/yichai/terachem-1.93p/bin/nbo6.i4.exe MAIL=/var/spool/mail/yichai PATH=/home/user/yichai/terachem-1.93p/bin:/home/user/yichai/python_lib/bin:/app/miniconda/miniconda3/condabin:/app/miniconda/miniconda3/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/puppetlabs/bin:/home/user/yichai/.local/bin:/home/user/yichai/bin SLURM_TASKS_PER_NODE=16 _ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewptaW5pY29uZGEgPSB7CmZuID0gIi9tb2R1bGVmaWxlcy9taW5pY29uZGEvbWluaWNvbmRhMyIsCmZ1bGxOYW1lID0gIm1pbmljb25kYS9taW5pY29uZGEzIiwKbG9hZE9yZGVyID0gMSwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJtaW5pY29uZGEvbWluaWNvbmRhMyIsCndWID0gIiptaW5pY29uZGEuMDAwMDAwMDAzLip6ZmluYWwiLAp9LAp9LAptcGF0aEEgPSB7CiIvbW9kdWxlZmlsZXMiLAp9LApzeXN0ZW1CYXNlTVBB SLURM_CONF=/var/spool/slurmd/conf-cache/slurm.conf SLURM_WORKING_CLUSTER=um-hpc:controller01:6817:9472:109 SLURM_JOB_ID=62988 CONDA_PREFIX=/home/user/yichai/python_lib PWD=/home/user/yichai SLURM_JOB_USER=yichai CUDA_VISIBLE_DEVICES=0,1,2 _LMFILES_=/modulefiles/miniconda/miniconda3 LANG=en_US.UTF-8 MODULEPATH=/modulefiles LOADEDMODULES=miniconda/miniconda3 SLURM_JOB_UID=548300727 KDEDIRS=/usr _ModuleTable_Sz_=2 SLURM_NODEID=0 SELINUX_LEVEL_REQUESTED= SLURM_SUBMIT_DIR=/home/user/yichai LMOD_CMD=/opt/apps/lmod/8.7.2/libexec/lmod SLURM_NPROCS=16 SLURM_TASK_PID=15297 SLURM_CPUS_ON_NODE=16 HISTCONTROL=ignoredups KRB5CCNAME=KEYRING:persistent:548300727 ENVIRONMENT=BATCH SLURM_PROCID=0 SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass _CE_M= SLURM_JOB_NODELIST=gpu02 SHLVL=3 HOME=/home/user/yichai SLURM_LOCALID=0 __LMOD_REF_COUNT_PATH=/app/miniconda/miniconda3/bin:1;/usr/lib64/qt-3.3/bin:1;/usr/local/bin:1;/usr/bin:1;/usr/local/sbin:1;/usr/sbin:1;/opt/puppetlabs/bin:1;/home/user/yichai/.local/bin:2;/home/user/yichai/bin:2 SLURM_CLUSTER_NAME=um-hpc SLURM_JOB_CPUS_PER_NODE=16 SLURM_JOB_GID=548300727 _ModuleTable002_=VEggPSAiL21vZHVsZWZpbGVzIiwKfQo= SLURM_SUBMIT_HOST=umhpc.dicc.um.edu.my SLURM_GTIDS=0 __LMOD_REF_COUNT_INCLUDE=/app/miniconda/miniconda3/include:1 BASH_ENV=/opt/apps/lmod/8.7.2/init/bash SLURM_JOB_PARTITION=gpu-titan LOGNAME=yichai CONDA_PYTHON_EXE=/app/miniconda/miniconda3/bin/python QTLIB=/usr/lib64/qt-3.3/lib SSH_CONNECTION=192.168.96.14 53047 10.13.4.11 22 SLURM_JOB_ACCOUNT=free GPU_DEVICE_ORDINAL=0,1,2 XDG_DATA_DIRS=/home/user/yichai/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share MODULESHOME=/opt/apps/lmod/8.7.2 SLURM_JOB_NUM_NODES=1 LMOD_SETTARG_FULL_SUPPORT=no LESSOPEN=||/usr/bin/lesspipe.sh %s OMP_NUM_THREADS=1 __LMOD_REF_COUNT_LD_LIBRARY_PATH=/app/miniconda/miniconda3/lib:1;/app/miniconda/miniconda3/lib64:1 CONDA_DEFAULT_ENV=/home/user/yichai/python_lib XDG_RUNTIME_DIR=/home/user/yichai/.runtime QT_PLUGIN_PATH=/usr/lib64/kde4/plugins:/usr/lib/kde4/plugins LMOD_DIR=/opt/apps/lmod/8.7.2/libexec INCLUDE=/app/miniconda/miniconda3/include __LMOD_REF_COUNT_MANPATH=/app/miniconda/miniconda3/share/man:1;/opt/apps/lmod/8.7.2/share/man:1;/opt/puppetlabs/puppet/share/man:1 SLURM_MEM_PER_NODE=55296 BASH_FUNC_module()=() {  local __lmod_my_status;
+ local __lmod_sh_dbg;
+ if [ -z "${LMOD_SH_DBG_ON+x}" ]; then
+ case "$-" in
+ *v*x*)
+ __lmod_sh_dbg='vx'
+ ;;
+ *v*)
+ __lmod_sh_dbg='v'
+ ;;
+ *x*)
+ __lmod_sh_dbg='x'
+ ;;
+ esac;
+ fi;
+ if [ -n "${__lmod_sh_dbg:-}" ]; then
+ set +$__lmod_sh_dbg;
+ echo "Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output" 1>&2;
+ fi;
+ eval "$($LMOD_CMD bash "$@")" && eval $(${LMOD_SETTARG_CMD:-:} -s sh);
+ __lmod_my_status=$?;
+ if [ -n "${__lmod_sh_dbg:-}" ]; then
+ echo "Shell debugging restarted" 1>&2;
+ set -$__lmod_sh_dbg;
+ fi;
+ return $__lmod_my_status
+} BASH_FUNC_ml()=() {  eval "$($LMOD_DIR/ml_cmd "$@")"
+} _=/usr/bin/env 
