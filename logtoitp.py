@@ -2,8 +2,8 @@ import pandas as pd
 import numpy as np
 import os
 
-# filefrom = 'TIPS0.05989356881873897energy.log'
-# fileto = 'TIPS.itp'
+#filefrom = 'TIPS0.05989356881873897energy.log'
+#fileto = 'TIPS.itp'
 
 while True:
     filefrom = input("Enter LOG file: ")
@@ -32,21 +32,13 @@ filetodupe = 'old'+str(fileto)
 word = 'ESP restraint charges:'
 word2 = '[ atoms ]'
 headerList = ['Atom', 'X', 'Y', 'Z', 'charge', 'Exposure']
-headerList2 = ['nr', ' type', 'resnr', ' resid', ' atom', 'cgnr', 'Charge', 'mass']
+headerList2 = ['nr', ' type', 'resnr', ' resid', ' atom', 'cgnr', 'Charge', 'Mass']
 
 
 def adjust(column, spaces):
     df2[column] = df2[column].astype(str)
     df2[column] = df2[column].str.rjust(spaces)
     return df2[column]
-
-
-def swap_columns(dataframe, col1, col2):
-    collist = list(dataframe.columns)
-    x, y = collist.index(col1), collist.index(col2)
-    col_list[y], col_list[x] = col_list[x], col_list[y]
-    dataframe = dataframe[col_list]
-    return dataframe
 
 
 try:
@@ -156,7 +148,6 @@ try:
     df2 = pd.read_csv(filetotemp, delim_whitespace=True, header=None)
 
     df2.columns = headerList2
-
     df2 = df2.join(df)
     col_list = list(df2.columns)
     x, y = col_list.index('charge'), col_list.index('Charge')
@@ -164,10 +155,10 @@ try:
     dfs = df2[col_list]
 
     del df2['Charge']
+    df2['mass'] = df2['Mass']
+    del df2['Mass']
     df2['charge'] = df2.charge.map('{:.3f}'.format)
     df2['mass'] = df2.mass.map('{:.4f}'.format)
-
-    df2 = swap_columns(df2, 'charge', 'mass')
 
     adjust('nr', 5)
     adjust(' type', 5)
@@ -214,4 +205,4 @@ except FileNotFoundError:
     print("File not found.")
 
 except Exception as e:
-    print("Error. Check your files")
+    print("Error. Check your files.")
