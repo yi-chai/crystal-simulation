@@ -41,6 +41,14 @@ def adjust(column, spaces):
     return df2[column]
 
 
+def swap_columns(dataframe, col1, col2):
+    collist = list(dataframe.columns)
+    x, y = collist.index(col1), collist.index(col2)
+    col_list[y], col_list[x] = col_list[x], col_list[y]
+    dataframe = dataframe[col_list]
+    return dataframe
+
+
 try:
     print("Reading " + filefrom + "...\n")
 
@@ -156,8 +164,10 @@ try:
     dfs = df2[col_list]
 
     del df2['Charge']
-    df2['mass'] = df2.mass.map('{:.4f}'.format)
     df2['charge'] = df2.charge.map('{:.3f}'.format)
+    df2['mass'] = df2.mass.map('{:.4f}'.format)
+
+    df2 = swap_columns(df2, 'charge', 'mass')
 
     adjust('nr', 5)
     adjust(' type', 5)
