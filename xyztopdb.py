@@ -2,8 +2,8 @@ import pandas as pd
 import numpy as np
 import os
 
-# filefrom = 'TIPS0.05989356881873897.xyz'
-# fileto = 'TIPS.pdb'
+#filefrom = '3.xyz'
+#fileto = '3.pdb'
 
 while True:
     filefrom = input("Enter XYZ file: ")
@@ -52,12 +52,13 @@ def adjust(colname, spaces):
 try:
     with open(filefrom, 'r') as file:
         lines = file.readlines()
+        atoms = len(lines) - 2
         for line in lines:
             if line.find(word) != -1:
                 n = lines.index(line) + 1
 
     with open(filefrom, 'r') as file:
-        dlist = file.readlines()[n:n + 100]
+        dlist = file.readlines()[n:n + atoms]
 
     with open(filefromtemp, 'w') as file:
         file.writelines(dlist)
@@ -77,10 +78,11 @@ try:
         file.writelines(lines)
 
     with open(fileto, 'r') as file:
-        dlist = file.readlines()[n:n + 100]
+        dlist = file.readlines()[n:n + atoms]
 
     with open(filetotemp, 'w') as file:
         file.writelines(dlist)
+
 
     df2 = pd.read_csv(filetotemp, header=None, delim_whitespace=True)
     df2.columns = headerList2
