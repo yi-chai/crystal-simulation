@@ -50,12 +50,15 @@ try:
         for i, line in enumerate(lines):
             if word in line:
                 linenumber = i + 3
+            elif 'Total atoms:' in line:
+                atoms = line.partition('Total atoms:')[2].strip()
+                atoms = int(atoms)
 
     with open(filefromtemp, 'w') as file:
         file.writelines(lines)
 
     with open(filefromtemp, 'r') as file:
-        dlist = file.readlines()[linenumber:linenumber + 100]
+        dlist = file.readlines()[linenumber:linenumber + atoms]
 
     with open(filefromtemp, 'w') as file:
         file.writelines(dlist)
@@ -140,7 +143,7 @@ try:
         file.writelines(filedata)
 
     with open(filetotemp, 'r') as file:
-        dlist = file.readlines()[linenumber:linenumber + 100]
+        dlist = file.readlines()[linenumber:linenumber + atoms]
 
     with open(filetotemp, 'w') as file:
         file.writelines(dlist)
@@ -187,7 +190,7 @@ try:
 
     with open(fileto, 'w') as file:
         for number, line in enumerate(l1):
-            if number not in range(linenumber + 101, linenumber + 202):
+            if number not in range(linenumber + atoms + 1, linenumber + 2 * (atoms + 1)):
                 file.write(line)
 
     print("Successfully updated charges in " + fileto + ".")
