@@ -129,7 +129,7 @@ try:
     lines.insert(n, df2.to_string(index=False, header=False) + "\n")
 
     with open(fileto, 'w') as file:
-        del lines[5:105]
+        del lines[5:atoms+5]
         lines = "".join(lines)
         file.write(lines)
 
