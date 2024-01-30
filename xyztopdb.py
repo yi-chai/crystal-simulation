@@ -117,7 +117,7 @@ try:
 
     with open(filetodupe) as f:
         lines = f.readlines()
-        while i < 101:
+        while i < atoms+1:
             del lines[4]
             i += 1
 
