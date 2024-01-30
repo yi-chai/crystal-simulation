@@ -85,35 +85,37 @@ try:
     i = 0
 
     if changes > 0:
-        print('Resolving charges...\n')
+        print('Resolving charges... [1]\n')
         while i < changes:
             if (i % 2) == 0:
                 df1 = df.iloc[-1 - i]
                 df1 = df1 - 0.001
-                df = df.replace(df.iloc[-1 - i], df1)
+                df.iloc[-1 - i] = df1
+                totalcharge = round(df.sum(), 3)
                 print("Resolved " + str(df.iloc[-1 - i]))
 
             else:
                 df1 = df.iloc[-1 + i]
                 df1 = df1 - 0.001
-                df = df.replace(df.iloc[-1 + i], df1)
+                df.iloc[-1 + i] = df1
+                totalcharge = round(df.sum(), 3)
                 print("Resolved " + str(df.iloc[-1 + i]))
             i += 1
 
     elif changes < 0:
-        print('Resolving charges...\n')
+        print('Resolving charges... [2]\n')
         changes = abs(int(changes))
         while i < changes:
             if (i % 2) == 0:
                 df1 = df.iloc[-1 - i]
                 df1 = df1 + 0.001
-                df = df.replace(df.iloc[-1 - i], df1)
+                df.iloc[-1 - i] = df1
                 print("Resolved " + str(df.iloc[-1 - i]))
 
             else:
                 df1 = df.iloc[-1 + i]
                 df1 = df1 + 0.001
-                df = df.replace(df.iloc[-1 + i], df1)
+                df.iloc[-1 + i] = df1
                 print("Resolved " + str(df.iloc[-1 + i]))
             i += 1
 
